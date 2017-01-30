@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 14, "sekolahan": "SMPN 1 Tanjung Siang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.757700031975588, -6.558334594387697 ] } },
+{ "type": "Feature", "properties": { "id": 15, "sekolahan": "SMPN 4 Subang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.759713939621122, -6.557672935603458 ] } },
+{ "type": "Feature", "properties": { "id": 16, "sekolahan": "SMK Kesehatan Bhakti Kencana Subang", "alamat": null, "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.753212348009583, -6.555703707834422 ] } },
+{ "type": "Feature", "properties": { "id": 17, "sekolahan": "SDN Sompi", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.755368973519765, -6.57032306916446 ] } },
+{ "type": "Feature", "properties": { "id": 18, "sekolahan": "SD Yos Sudarso", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.755923987437825, -6.575773712514324 ] } },
+{ "type": "Feature", "properties": { "id": 1, "sekolahan": "Sekolah Dasar Rosela Indah", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.759494960071919, -6.560316567545392 ] } },
+{ "type": "Feature", "properties": { "id": 2, "sekolahan": "SMPN 1 Subang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.760835463886238, -6.568297999676536 ] } },
+{ "type": "Feature", "properties": { "id": 3, "sekolahan": "SMPN 3  Subang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.764120098419056, -6.565412631328806 ] } },
+{ "type": "Feature", "properties": { "id": 5, "sekolahan": "SDN Ciheulet", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.769388141602079, -6.577600335088992 ] } },
+{ "type": "Feature", "properties": { "id": 7, "sekolahan": "SMPN 2 Subang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.765877027880862, -6.575290448636588 ] } },
+{ "type": "Feature", "properties": { "id": 8, "sekolahan": "SMAN 3 Subang", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.766991580008153, -6.575595888783409 ] } },
+{ "type": "Feature", "properties": { "id": 9, "sekolahan": "SDN RA Kartini", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.78177723950985, -6.577057635458823 ] } },
+{ "type": "Feature", "properties": { "id": 10, "sekolahan": "SMKN 1 Subang", "alamat": null, "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.759819587944264, -6.555968241038029 ] } },
+{ "type": "Feature", "properties": { "id": 11, "sekolahan": "SMAN 1 Subang", "alamat": null, "kategori": "SMA" }, "geometry": { "type": "Point", "coordinates": [ 107.75123047631493, -6.55514041725831 ] } },
+{ "type": "Feature", "properties": { "id": 12, "sekolahan": "SMAN 2 Subang", "alamat": null, "kategori": "SMA" }, "geometry": { "type": "Point", "coordinates": [ 107.737000754063303, -6.547498902108298 ] } },
+{ "type": "Feature", "properties": { "id": 13, "sekolahan": "SMPN 2 Dawuan", "alamat": null, "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.714790849738165, -6.539379664094894 ] } }
+]
+}

@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "sekolahan": "SMPN 4 Subang", "alamat": "JL. Kartawigenda, No. 31, Cigadung, Cigadung, Kec. Subang, Kabupaten Subang, Jawa Barat 41213","gambar":"smp4subang.jpeg", "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.7596822245401, -6.557672935603471 ] } },
+{ "type": "Feature", "properties": { "id": 2, "sekolahan": "SMPN 1 Tanjung Siang Subang", "alamat": "Jl. Raya Tanjungsiang Km. 32, Tanjungsiang, Kabupaten Subang, Jawa Barat 41211", "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.757700031975602, -6.558318840617322 ] } },
+{ "type": "Feature", "properties": { "id": 5, "sekolahan": "SMPN 1 Subang", "alamat": "Jl. Letjend Soeprapto No.105, Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat 41211","gambar": "smp1subang.jpeg", "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.760847753768033, -6.568290877599479 ] } },
+{ "type": "Feature", "properties": { "id": 3, "sekolahan": "SMPN 2 Subang", "alamat": "Jl. Emo Kurniaatmaja No.3, Pasirkareumbi, Kec. Subang, Kabupaten Subang, Jawa Barat 41214", "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.765846843415716, -6.575285362512529 ] } },
+{ "type": "Feature", "properties": { "id": 4, "sekolahan": "SMPN 3 Subang", "alamat": "Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat 41211", "gambar": "smp3subang.jpeg", "kategori": "SMP" }, "geometry": { "type": "Point", "coordinates": [ 107.764112424921819, -6.565407986956147 ] } }
+]
+}

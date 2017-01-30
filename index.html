@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>::Ujian Akhir Semester Simple Map::</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 90%;
+        width:90%;
+        margin:0 auto;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: arial, sans-serif;
+          color:#3670d0;
+      }
+      h1{
+        text-align: center;
+        font-family: arial, sans-serif;
+        color:#3670d0;
+      }
+
+      #info-box {
+        background:transparent;
+        border: 0px solid black;
+        top: 200px;
+        height: 20px;
+        padding: 10px;
+        position: absolute;
+        right: 120px;
+        color: #d631c1;
+
+
+      }
+      .ket{
+        margin:0 auto;
+        margin-left:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ujian Akhir Semester (UAS)</h1>
+    <h1>Sistem Informasi Geografis</h1>
+    <div class="ket">
+      <h3>Roni Jakarianto / D1A.13.0426</h3>
+        <h3>Keterangan :</h3>
+        <p><img src="icon/icon-sd.png"> Sekolah Dasar (SD) / <img src="icon/icon-smp.png"> Sekolah Menengah Pertama (SMP) / <img src="icon/icon-sma.png"> Sekolah Menengah Akhir / <img src="icon/icon-smk.png"> Sekolah Menengah Kejuruan (SMK)</p>
+    </div>
+    <div id="map"></div>
+    <div id="info-box"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -6.569575909593727 , lng: 107.761731600032221},
+          zoom: 15
+        });
+
+        var layer_1 = new google.maps.Data();
+        var layer_2 = new google.maps.Data();
+        var layer_smp = new google.maps.Data();
+        var layer_sma = new google.maps.Data();
+        var layer_smk = new google.maps.Data();
+        layer_1.loadGeoJson("http://localhost/google_maps/testgeojson.json");
+        layer_2.loadGeoJson("http://localhost/google_maps/sekolah-sd.geojson");
+        layer_smp.loadGeoJson("http://localhost/google_maps/smp.geojson");
+        layer_sma.loadGeoJson("http://localhost/google_maps/sma.geojson");
+        layer_smk.loadGeoJson("http://localhost/google_maps/smk.geojson");
+        layer_1.setMap(map);
+        layer_2.setMap(map);
+        layer_smp.setMap(map);
+        layer_sma.setMap(map);
+        layer_smk.setMap(map);
+        map.data.setStyle({
+          fillColor : 'green'
+        });
+
+        layer_2.setStyle({
+            icon : 'icon/icon-sd.png',
+        });
+
+        layer_smp.setStyle({
+          icon : 'icon/icon-smp.png',
+        });
+
+        layer_sma.setStyle({
+          icon : 'icon/icon-sma.png',
+        });
+
+        layer_smk.setStyle({
+          icon : 'icon/icon-smk.png',
+        });
+
+        layer_2.addListener('mouseover', function(event) {
+        document.getElementById('info-box').textContent =
+            event.feature.getProperty('sekolahan');
+      });
+
+      layer_smp.addListener('mouseover', function(event) {
+        document.getElementById('info-box').textContent =
+            event.feature.getProperty('sekolahan');
+      });
+
+      layer_sma.addListener('mouseover', function(event) {
+        document.getElementById('info-box').textContent =
+            event.feature.getProperty('sekolahan');
+      });
+
+      layer_smk.addListener('mouseover', function(event) {
+        document.getElementById('info-box').textContent =
+            event.feature.getProperty('sekolahan');
+      });
+        var dialoginfo = new google.maps.InfoWindow({
+
+        });
+
+        layer_2.addListener('click', function(event){
+          var nama = event.feature.getProperty('sekolahan');
+          var alamat = event.feature.getProperty('alamat');
+          var gambar =event.feature.getProperty('gambar');
+          var contentstr=
+             '<div id="siteNotice">'+
+                 '</div>'+
+                 '<h1 id="firstHeading" class="firstHeading">Data Sekolah Dasar (SD)</h1>'+
+           '<div id="bodyContent">'+
+                     '<p><b>'+nama+'</b>'+'</p>'+
+              '<p><b>'+alamat+'</b>'+'</p>'+
+           '</div>'+
+           '<div><img src="gambar/'+gambar+'" height="150px" width=250px" >'
+                 '</div>';
+
+      dialoginfo.setContent(contentstr);
+      dialoginfo.setPosition(event.latLng);
+      dialoginfo.open (map,layer_2);
+        });
+
+        layer_smp.addListener('click', function(event){
+          var nama = event.feature.getProperty('sekolahan');
+          var alamat = event.feature.getProperty('alamat');
+          var gambar =event.feature.getProperty('gambar');
+          var contentstr=
+             '<div id="siteNotice">'+
+                 '</div>'+
+                 '<h1 id="firstHeading" class="firstHeading">Data Sekolah Menengah Pertama (SMP)</h1>'+
+           '<div id="bodyContent">'+
+                     '<p><b>'+nama+'</b>'+'</p>'+
+              '<p><b>'+alamat+'</b>'+'</p>'+
+           '</div>'+
+           '<div><img src="gambar/'+gambar+'" height="150px" width=250px" >'
+                 '</div>';
+
+      dialoginfo.setContent(contentstr);
+      dialoginfo.setPosition(event.latLng);
+      dialoginfo.open (map,layer_2);
+        });
+
+        layer_sma.addListener('click', function(event){
+          var nama = event.feature.getProperty('sekolahan');
+          var alamat = event.feature.getProperty('alamat');
+          var gambar =event.feature.getProperty('gambar');
+          var contentstr=
+             '<div id="siteNotice">'+
+                 '</div>'+
+                 '<h1 id="firstHeading" class="firstHeading">Data Sekolah Menengah Akhir (SMA)</h1>'+
+           '<div id="bodyContent">'+
+                     '<p><b>'+nama+'</b>'+'</p>'+
+              '<p><b>'+alamat+'</b>'+'</p>'+
+           '</div>'+
+           '<div><img src="gambar/'+gambar+'" height="150px" width=250px" >'
+                 '</div>';
+
+      dialoginfo.setContent(contentstr);
+      dialoginfo.setPosition(event.latLng);
+      dialoginfo.open (map,layer_2);
+        });
+
+        layer_smk.addListener('click', function(event){
+          var nama = event.feature.getProperty('sekolahan');
+          var alamat = event.feature.getProperty('alamat');
+          var gambar =event.feature.getProperty('gambar');
+          var contentstr=
+             '<div id="siteNotice">'+
+                 '</div>'+
+                 '<h1 id="firstHeading" class="firstHeading">Data Sekolah Menengah Kejuruan (SMK)</h1>'+
+           '<div id="bodyContent">'+
+                     '<p><b>'+nama+'</b>'+'</p>'+
+              '<p><b>'+alamat+'</b>'+'</p>'+
+           '</div>'+
+           '<div><img src="gambar/'+gambar+'" height="150px" width=250px" >'
+                 '</div>';
+
+      dialoginfo.setContent(contentstr);
+      dialoginfo.setPosition(event.latLng);
+      dialoginfo.open (map,layer_2);
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEFpeiY_fN66typXO9w_u1PMMbQFYTYoM&callback=initMap"
+    async defer></script>
+  </body>
+</html>

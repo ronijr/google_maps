@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 17, "sekolahan": "SDN Sompi", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.755368973519765, -6.57032306916446 ] } },
+{ "type": "Feature", "properties": { "id": 18, "sekolahan": "SD Yos Sudarso", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.755923987437825, -6.575773712514324 ] } },
+{ "type": "Feature", "properties": { "id": 1, "sekolahan": "SDN Rosela Indah", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.759494960071919, -6.560316567545392 ] } },
+{ "type": "Feature", "properties": { "id": 5, "sekolahan": "SDN Ciheulet", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.769388141602079, -6.577600335088992 ] } },
+{ "type": "Feature", "properties": { "id": 9, "sekolahan": "SDN RA Kartini", "alamat": null, "kategori": "SD" }, "geometry": { "type": "Point", "coordinates": [ 107.78177723950985, -6.577057635458823 ] } },
+]
+}

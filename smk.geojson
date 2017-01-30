@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "sekolahan": "SMKN 1 Subang", "alamat": "Jl. Arief Rahman Hakim No.35, Cigadung, Kec. Subang, Kabupaten Subang, Jawa Barat 41213","gambar":"smk1subang.jpg", "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.759872515026302, -6.55589275403779 ] } },
+{ "type": "Feature", "properties": { "id": 2, "sekolahan": "SMK Kesehatan Bhakti Kencana Subang", "alamat": "Jl. Ki Hajar Dewantara No.15A, Dangdeur, Kec. Subang, Kabupaten Subang, Jawa Barat 41212","gambar":"bhaktikencana.jpeg", "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.753228205550101, -6.555719461687427 ] } },
+{ "type": "Feature", "properties": { "id": 3, "sekolahan": "SMKN 2 Subang", "alamat": "Jl. Wera Km.5, Dangdeur, Kec. Subang, Sukasari, Dawuan, Kabupaten Subang, Jawa Barat 41212", "gambar":"smk2subang.jpg", "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.735681836969249, -6.547684932062773 ] } },
+{ "type": "Feature", "properties": { "id": 4, "sekolahan": "SMK YPIB Subang", "alamat": "JL. Emo Kurnia Atmaja, RT. 04 RW. 03, Pasirkareumbi, Pasirkareumbi, Kec. Subang, Kabupaten Subang, Jawa Barat 41214","gambar":"smkypibsubang.jpg", "kategori": "SMK" }, "geometry": { "type": "Point", "coordinates": [ 107.765101539011454, -6.574529206724457 ] } }
+]
+}
